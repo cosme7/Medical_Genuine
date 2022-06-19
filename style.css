@@ -51,6 +51,7 @@
 
 .header-bar-wrapper{
     display: flex;
+    align-items: center;
     gap: 3vw;
     position: relative;
     right: 5vw;
@@ -68,11 +69,14 @@
 }
 
 .h-menu-btn{
-    font-size: 1.5vw;
+    width: 10vw;
+    height: 3.5vw;
+    font-size: 2vw;
     font-weight: 700;
-    padding: .5vw 1vw;
     background-color: #96BB7C;
     color: white;
+    border: none;
+    cursor: pointer;
     display: none;
 }
 
@@ -152,7 +156,8 @@
 }
 
 .mid-header p{
-    width: 20vw;
+    width: 30vw;
+    font-size: 1.5vw;
     font-weight: 400; 
     letter-spacing: .2px;
     padding-bottom: 3vw;
@@ -174,7 +179,7 @@
     cursor: pointer;
 }
 
-/*! SPECIALIZE CARD CONFIG */
+/** SPECIALIZE CARD CONFIG */
 .card-case{
     position: relative;
     top: 15vw;
@@ -208,7 +213,7 @@
 .specialize-p{
     font-size: 1.1vw;
 }
-/*! SPECIALIZE CARD CONFIG END */
+/** SPECIALIZE CARD CONFIG END */
 
 .specialize-card{
     width: 35vw;
@@ -234,7 +239,7 @@
 
 .experts-txt{
     position: relative;
-    left: 12vw;
+    left: 11vw;
 }
 
 .specialize-txt h2, .experts-txt h2{
@@ -287,7 +292,7 @@
 
 .doctor{
     width: 20vw;
-    border-radius: 0 80px 0 80px;
+    border-radius: 0 5vw 0 5vw;
     box-shadow: 1.5vw 1vw 0 0 #DCEAEF;
 }
 
@@ -330,7 +335,7 @@
     text-align: center;
 }
 
-/*! CONTAINER SECTION & TXT CONFIG */
+/** CONTAINER SECTION & TXT CONFIG */
 .department, .pricing, .client, .newsletter{
     width: 100%;
     padding: 8vw 0 10vw;
@@ -376,7 +381,7 @@
     letter-spacing: .2px;
     color: white;
 }
-/*! CONTAINER SECTION & TXT CONFIG END */
+/** CONTAINER SECTION & TXT CONFIG END */
 
 .department-card{
     padding-top: 4vw;
@@ -436,7 +441,7 @@
 }
 
 .surgeons-txt, .cells-txt, .hands-txt{
-    padding: 1.5vw 1vw;
+    padding: 1.5vw;
     display: flex;
     flex-direction: column;
     gap: 1vw;
@@ -456,10 +461,12 @@
 }
 
 .depart-avaliation{
+    width: 4vw;
+    height: 2vw;
     border-radius: 20px;
-    padding: .3vw .4vw;
     display: flex;
     align-items: center;
+    justify-content: center;
     gap: .2vw;
     background: #2D4059;
 }
@@ -842,4 +849,467 @@
 
 .fig-sociais img{
     width: 2vw;
+}
+
+@media(max-width:600px){
+    /** HEADER RESPONSIVE */
+    .header-bar{
+        padding: 0;
+    }
+
+    .header-bar-wrapper{
+        width: 100%;
+        justify-content: space-between;
+        position: initial;
+    }
+
+    .header-bar-wrapper h3{
+        font-size: 3vw;
+        order: 2;
+        position: relative;
+        right: 35vw;
+    }
+
+    .h-menu-btn{
+        display: initial;
+    }
+
+    .h-ul{
+        display: none;
+    }
+
+    .h-login{
+        display: none;
+    }
+
+    .mid-header{
+        padding-top: 10vw;
+    }
+
+    .mid-join-transparent-btn{
+        font-size: 2vw;
+        padding-bottom: 2vw;
+    }
+
+    .mid-header h1{
+        width: 60%;
+        font-size: 5vw;
+    }
+
+    .mid-header p{
+        width: 70%;
+        font-size: 3vw;
+    }
+
+    .mid-join-btn{
+        width: 14vw;
+        height: 4vw;
+        font-size: 2vw;
+    }
+    /** HEADER RESPONSIVE END */
+
+    /** SPECIALIZE + EXPERTS RESPONSIVE */
+    .specialize, .experts{
+        flex-direction: column;
+        justify-content: center;
+        gap: 4vw;
+    }
+
+    .specialize-txt, .experts-txt{
+        align-items: center;
+    }
+
+    .doctor{
+        width: 50vw;
+        border-radius: 0 11vw 0 11vw;
+        box-shadow: 3vw 3vw 0 0 #DCEAEF;
+    }
+
+    .graphic{
+        width: 20vw;
+        top: 26vw;
+        left: -11vw;
+    }
+
+    .single{
+        width: 15vw;
+        right: -8vw;
+        top: 8vw;
+    }
+
+    .experts-txt{
+        position: initial;
+    }
+
+    .specialize-line, .experts-line{
+        width: 15vw;
+        height: .5vw;
+    }
+
+    .specialize-txt h2, .experts-txt h2{
+        width: 50%;
+        font-size: 5vw;
+        text-align: center;
+    }
+
+    .specialize-txt p, .experts-txt p{
+        width: 90%;
+        font-size: 2.5vw;
+        text-align: center;
+    }
+
+    .specialize-txt a, .experts-txt a{
+        width: 100%;
+        text-align: center;
+    }
+
+    .specialize-btn, .experts-btn{
+        width: 50%;
+        background-size: 3vw 3vw;
+        background-position: 35vw center;
+        font-size: 3vw;
+        text-align: center;
+    }
+    /** SPECIALIZE + EXPERTS RESPONSIVE END*/
+
+    /** SPECIALIZE CARD CONFIG */
+    .specialize-card{
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card-case{
+        position: initial;
+    }
+
+    .card-examination, .card-case, .card-dental{
+        width: 55%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .specialize-img{
+        width: 14vw;
+    }
+
+    .specialize-span{
+        width: 15vw;
+        height: .5vw;
+    } 
+    
+    .specialize-h4{
+        font-size: 3vw;
+        text-align: center;
+    }
+    
+    .specialize-p{
+        width: 100%;
+        font-size: 3vw;
+        text-align: center;
+    }
+    /** SPECIALIZE CARD CONFIG END */
+
+    /** CUSTOMERS RESPONSIVE */
+    .customers{
+        flex-direction: column;
+    }
+
+    .customers h2{
+        font-size: 6vw;
+    }
+
+    .customers p{
+        font-size: 2.5vw;
+    }
+    /** CUSTOMERS RESPONSIVE END */
+
+    /** CONTAINER SECTION & TXT CONFIG */
+    .department, .pricing, .client, .newsletter{
+        justify-content: center;
+    }
+
+    .department-txt, .pricing-txt, .client-txt, .newsletter-txt{
+        width: 100%;
+        text-align: center;
+    }
+
+    .depart-h6, .pricing-h6, .client-h6, .newsletter-h6{
+        font-size: 2vw;
+    }
+    
+    .depart-h2, .pricing-h2, .client-h2, .newsletter-h2{
+        font-size: 5vw;
+    }
+    
+    .depart-p, .pricing-p, .client-p, .newsletter-p{
+        font-size: 2.5vw;
+    }
+    /** CONTAINER SECTION & TXT CONFIG END */
+
+    /** DEPARTMENT CARD CONFIG */
+    .department-card{
+        flex-direction: column;
+        align-items: center;
+        gap: 2vw;
+    }
+
+    .surgeons-card, .cells-card, .hands-card{
+        width: 60%;
+    }
+    
+    .department-icons p{
+        width: 10%;
+        font-size: 2vw;
+        top: 2vw;
+        left: 2vw;
+    }
+    
+    .department-icons figure{
+        gap: 2vw;
+        bottom: 3vw;
+    }
+    
+    .department-icons figure img{
+        width: 8vw;
+    }
+    
+    .surgeons-img, .cells-img, .hands-img{
+        width: 100%;
+        height: 100%;
+    }
+    
+    .surgeons-txt, .cells-txt, .hands-txt{
+        padding: 2vw 2vw 4vw;
+        gap: 1vw;
+    }
+    
+    .tratament{
+        font-size: 2vw;
+    }
+    
+    .depart-avaliation{
+        width: 8vw;
+        height: 4vw;
+    }
+    
+    .depart-avaliation img{
+        width: 2.5vw;
+    }
+    
+    .depart-avaliation p{
+        font-size: 2vw;
+    }
+    
+    .surgeons-txt h5, .cells-txt h5, .hands-txt h5{
+        font-size: 2vw;
+    }
+    
+    .paragraph-card{
+        width: 60%;
+        font-size: 2vw;
+    }
+    
+    .sales img{
+        width: 4vw;
+    }
+    
+    .sales-quantity{
+        font-size: 2vw;
+    }
+    
+    .price-first, .price-second{
+        font-size: 2vw;
+    }
+    
+    .department-btn{
+        width: 20vw;
+        height: 6vw;
+        font-size: 2vw;
+    }
+    
+    .department-btn span{
+        top: .3vw;
+    }
+    
+    .department-btn span img{
+        width: 1vw;
+    }
+    /** DEPARTMENT CARD CONFIG END */
+
+    /** PRICING CARD CONFIG*/
+    .price-card{
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        gap: 4vw;
+    }
+
+    .price-white, .price-blue{
+        width: 55%;
+        padding: 6vw 2.1vw;
+        gap: 2vw;
+    }
+    
+    .pricing-new{
+        width: 10vw;
+        height: 10vw;
+        padding: 3.2vw 2.5vw;
+    }
+    
+    .pricing-new-p{
+        font-size: 2vw;
+    }
+    
+    .price-white-img, .price-blue-img{
+        width: 10vw;
+    }
+    
+    .price-h3, .price-h3-blue{
+        font-size: 4vw;
+    }
+    
+    .organize, .organize-blue{
+        width: 50%;
+        font-size: 2vw;
+    }
+
+    .price-p, .price-p-blue{
+        font-size: 6vw;
+    }
+    
+    .price-month{
+        font-size: 1.5vw;
+    }
+    
+    .price-slate, .price-slate-blue{
+        width: 50%;
+        font-size: 2vw;
+    }
+
+    .pricing-btn, .pricing-blue-btn{
+        width: 40vw;
+        height: 6vw;
+        font-size: 2vw;
+    }
+    
+    .pricing-ul{
+        width: 40vw;
+        gap: 1vw;
+    }
+    
+    .ok-green, .ok-grey{
+        font-size: 2vw;
+    }
+    
+    .ok-grey{
+        width: 35vw;
+    }
+    
+    .k-green, .k-gray{
+        width: 4vw;
+        margin-right: .5vw;
+        margin-left: 1.5vw;
+    }
+    /** PRICING CARD CONFIG END */
+
+    /** CLIENT CARD CONFIG */
+
+    .client-card{
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        gap: 2vw;
+    }
+
+    .regina{
+        width: 55%;
+        gap: 2vw;
+    }
+    
+    .star-fig img{
+        width: 6vw;
+    }
+    
+    .client-slate{
+        width: 50%;
+        font-size: 2.5vw;
+    }
+    
+    .client-div{
+        gap: 2vw;
+    }
+    
+    .client-div img{
+        width: 10vw;
+    }
+    
+    .client-info h6{
+        font-size: 2.5vw;
+    }
+    
+    .client-info p{
+        font-size: 2vw;
+    }
+    /** CLIENT CARD CONFIG END */
+
+    /** NEWSLETTER CARD CONFIG*/
+    .news-input{
+        width: 70vw;
+    }
+    
+    .news-input::placeholder{
+        font-size: 2.5vw;
+        padding-left: 2vw;
+    }
+    
+    .news-btn{
+        width: 18vw;
+        height: 9vw;
+        font-size: 2.5vw;
+    }
+    /** NEWSLETTER CARD CONFIG END */
+
+    /** FOOTER */
+    .footer-info{
+        flex-direction: column;
+    }
+
+    .f-info h5, .info-imgs h5{
+        font-size: 3.5vw;
+        padding-left: 2vw;
+    }
+
+    .f-info p, .info-imgs p{
+        font-size: 2.5vw;
+        padding-left: 2vw;
+    }
+
+    .info-imgs img{
+        width: 4vw;
+    }
+
+    .info-p{
+        width: 100%;
+    }
+
+    .footer-sociais{
+        flex-direction: column;
+        gap: 1vw;
+    }
+
+    .footer-sociais p{
+        font-size: 2.5vw;
+        order: 2;
+    }
+
+    .fig-sociais{
+        gap: 3vw;
+    }
+
+    .fig-sociais img{
+        width: 5vw;
+    }
+    /** FOOTER END */
 }
